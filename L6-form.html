@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שיעור 5 - טופס</title>
+    <style>
+        input {
+            padding: 3px;
+            margin: 6px;
+            display: inline;
+        }
+
+        fieldset>legend {
+            color: blue;
+        }
+
+        fieldset {
+            width: 25%;
+            margin: 15px;
+            padding: 15px;
+            color: rgba(192, 0, 42, 0.877);
+            display: inline;
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <h1>טופס הרשמה</h1>
+    <form action="mailto:resauth@gmail.com" method="get">
+        <fieldset>
+            <legend>פרטים אישיים</legend>
+            <label for="fname">שפ פרטי:</label>
+            <input id="fname" name="fname" type="text" placeholder="שפ פרטי" required><br>
+            <label for="lname">שפ משפחה:</label>
+            <input id="lname" name="fname" type="text" placeholder="שפ משפחה" required><br>
+            <label for="pass">סיסמא:</label>
+            <input id="pass" name="fname" type="password" maxlength="8" placeholder="סיסמא" required><br>
+            <label for="birthday">תאריל לידה:</label>
+            <input id="birthday" name="fname" type="date" min="1940-01-01" value="1980-01-01"><br>
+            <label for="email">דוא"ל:</label>
+            <input type="email" name="email" placeholder="שם@ספק"><br>
+            <label for="tel">פלאפון:</label>
+            <input type="tel" name="tel" placeholder="05X-XXX-XX-XX"
+                pattern="[0]{1}[5]{1}[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>פרטי הכנסה</legend>
+            <input type="radio" value="<5000" name="income">פחות מ-5,000<br>
+            <input type="radio" value="5000-8000" name="income">5,000-8,000<br>
+            <input type="radio" value="8000-12000" name="income">8,000-12,000<br>
+            <input type="radio" value=">12000" name="income">יותר מ-12,000<br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>ידע בשפות</legend>
+            <input type="checkbox" name="lang" value="eng">אנגלית<br>
+            <input type="checkbox" name="lang" value="rus">רוסית<br>
+            <input type="checkbox" name="lang" value="fr">צרפתית<br>
+            <input type="checkbox" name="lang" value="ar">ערבית<br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>מידע נוסף</legend>
+            <label for="color">בחר צבע:</label>
+            <input type="color"><br>
+            <label for="file">העלאת קובץ:</label>
+            <input type="file" value="בחר קובץ"><br>
+            <input type="hidden" id="formnumber" value="1737"><br>
+            <label for="quantity">שנות שירות (בין 0-40):</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="40"><br>
+            <label for="vol">תן ציון:</label>
+            0<input type="range" id="vol" name="vol" min="0" max="100">100<br>
+            <!-- <input type="time"><br> -->
+            <label for="url">קישור לאתר האישי:</label>
+            <input type="url" dir="ltr"><br>
+            <input type="button" value="סתם כפתור נחמד שלא עושה כלום"><br>
+            <label for="url">דפדפן האהוב עליך:</label>
+            <input list="browsers" name="browser"><br>
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <label for="about">ספר על עצמך:</label><br>
+            <textarea name="about" id="about" cols="37" rows="10"></textarea>
+        </fieldset><br>
+        <label for="sign">נחתם ב:</label>
+        <input type="datetime-local" name="sign"><br>
+        <label for="director">מנהל שלך:</label>
+        <input type="text" name="director" id="" value="משה לוי" readonly disabled><br>
+        <input type="image" src="open-button.jpg" style="width: 80px;"><br>
+        <input type="reset" value="איפוס טופס">
+        <input type="submit" value="שלח טופס">
+    </form>
+</body>
+
+</html>
