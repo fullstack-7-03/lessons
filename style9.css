@@ -1,0 +1,38 @@
+* {
+    text-align: center;
+    font-size: 16px;
+    direction: rtl;
+    color: whitesmoke;
+}
+
+body {
+    background-color: rgb(44, 44, 44);
+    /* background-image: url(reka1.jpg);
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-attachment: scroll; */
+}
+
+/* Header Design */
+
+h1 {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #1fce28;
+}
+
+p {
+    font-size: 1.2em;
+    background-color: #ee03cf;
+    color: rgb(255, 233, 36);
+}
+
+span {
+    font-size: 1.2em;
+    background-color: rgb(255, 233, 36, 0.5);
+    color: #ee03cf;
+    border: 2px solid blue;
+    border-color: chocolate;
+}
