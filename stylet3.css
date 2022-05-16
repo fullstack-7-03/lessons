@@ -1,0 +1,68 @@
+* {
+    text-align: center;
+    font-size: 44px;   
+    padding: 5px;
+    margin: 0; 
+}
+
+body {
+    /* background-image: url(bmw.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    background-size: cover;  
+    background-position: center;   */
+}
+
+table {
+    margin: auto;     
+    border-collapse:collapse; 
+    background-image: url(reka2.png);
+    background-size: cover;
+    
+}
+
+td,tr {   
+    border: solid white 10px; 
+    border-radius: 6px;   
+}
+
+.help {
+    background-color: green;
+    color: aliceblue;    
+}
+
+.menu {
+    background-color: rgb(138, 24, 4);
+    color: aliceblue;
+}
+
+caption {
+    background-color: orange;
+    color: aliceblue; 
+    border: solid white 10px; 
+    border-radius: 6px;
+}
+
+caption.new {
+    background-color: rgb(150, 199, 238);    
+}
+
+q::before,q::after {
+    color: orange;
+}
+
+li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+li::before{
+    content: ' \231A';
+}
+
+li::after{
+    content: ' \231A';
+    float: right;
+}
