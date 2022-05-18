@@ -19,18 +19,25 @@ menu {
 /* Menu Design */
 
 menu>ul>li {
-    /* list-style-type: none; */
+    list-style-type: none;
     font-size: 1.3em;
     background-color: #232323;
     color: azure;
     padding: 20px;
     margin: 5px auto;
     width: max-content;
-    /* display: inline; */
+    display: inline;
 }
 
 menu>ul>li:hover {
-    border: solid 2px red;
+    border: solid 7px red;
+    padding: 13px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+menu>ul>li:active {
+    border: double 2px rgb(0, 60, 255);
     /* padding: 18px; */
 }
 
@@ -41,17 +48,17 @@ div.nav {
     font-family: "Times New Roman", Times, serif;
     background-color: #1fce28;
     margin: 0;
-    /* width: 98%;   
-    padding: 1%;   */
+    width: 98%;   
+    padding: 1%;  
     height: 40px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 div.nav>img {
     width: 30px;
     height: 30px;
-    /* float: right; */
-    /* margin: 5px auto 5px auto; */
+     float: right; 
+     margin: 5px auto 5px auto; 
 }
 
 p {
@@ -71,7 +78,9 @@ p.new {
     background-color: rgb(47, 217, 240, 0.8);
     margin: 0;
     padding: 0;
-    font-family: "Rubik", sans-serif;
+    font-size: 3.5em;
+    /* font-weight: 900; */
+    font-family: 'Rubik Glitch', sans-serif;
 }
 
 p.ex3 {
@@ -92,6 +101,7 @@ span {
     font-family: "Lato", sans-serif;
 }
 
+/* A Sample */
 a {
     text-decoration: none;
     line-height: 50px;
@@ -112,7 +122,7 @@ a:visited {
 /* mouse over link */
 a:hover {
     color: rgb(255, 230, 0);
-    text-decoration: underline red double;
+    text-decoration: underline red dotted;
     text-shadow: 2px 2px 5px red;
 }
 
