@@ -1,0 +1,122 @@
+* {
+    text-align: center;
+    font-size: 16px;
+    direction: rtl;
+    color: rgb(54, 33, 1);
+    margin: 0;
+}
+
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: darkorange;
+}
+
+menu {
+    font-family: "Narkisim", Times, serif;
+    margin: 30px;
+}
+
+/* Menu Design */
+
+menu>ul>li {
+    /* list-style-type: none; */
+    font-size: 1.3em;
+    background-color: #232323;
+    color: azure;
+    padding: 20px;
+    margin: 5px auto;
+    width: max-content;
+    /* display: inline; */
+}
+
+menu>ul>li:hover {
+    border: solid 2px red;
+    /* padding: 18px; */
+}
+
+/* Header Design */
+
+div.nav {
+    font-size: 1.5em;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #1fce28;
+    margin: 0;
+    /* width: 98%;   
+    padding: 1%;   */
+    height: 40px;
+    width: 100%;
+}
+
+div.nav>img {
+    width: 30px;
+    height: 30px;
+    /* float: right; */
+    /* margin: 5px auto 5px auto; */
+}
+
+p {
+    font-size: 1.2em;
+    background-color: #ee03cf;
+    color: rgb(46, 46, 46);
+    width: fit-content;
+    margin-top: 5px;
+    margin-bottom: 13px;
+    padding: 2%;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+p.new {
+    height: 200px;
+    width: 50%;
+    background-color: rgb(47, 217, 240, 0.8);
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+p.ex3 {
+    background-color: white;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 3px;
+}
+
+span {
+    font-size: 1.2em;
+    background-color: rgb(255, 233, 36, 0.5);
+    color: #ee03cf;
+    border: 2px solid blue;
+    border-color: chocolate;
+    width: fit-content;
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    line-height: 50px;
+    letter-spacing: 7px;
+    font-family: "Sofia", sans-serif;
+}
+
+/* unvisited link */
+a:link {
+    color: rgb(255, 255, 255);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(4, 2, 105);
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(255, 230, 0);
+    text-decoration: underline red double;
+    text-shadow: 2px 2px 5px red;
+}
+
+/* selected link */
+a:active {
+    color: rgb(22, 255, 1);
+}
