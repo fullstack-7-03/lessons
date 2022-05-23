@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style12.css">
+    <title>שיעור 12</title>
+</head>
+
+<body>
+    <div class="nav">
+        מיני אתר שלי
+        <a href="#"><img src="css.png" alt=""></a>
+    </div>
+    <menu>
+        <ul>
+            <li>דף בית</li>
+            <li>אודותינו</li>
+            <li>צור קשר</li>
+            <li>מחירון</li>
+        </ul>
+    </menu>
+    <br>
+    <div class="container">
+
+        <li>דף בית</li>
+        <li>אודותינו</li>
+        <li>צור קשר</li>
+        <li>מחירון</li>
+    </div>
+    <div class="hidden">
+        <p class="my" id="my" onclick="q1()">Text</p>
+        <p id="secret" class="secret my">Secret code is: 1234</p>
+    </div>
+
+    <br>
+    <div class="gallery">
+        <img src="food1.jpg" alt="">
+        <img src="food2.jpg" alt="">
+        <img src="food3.jpg" alt="">
+        <img src="food4.jpg" alt="">
+        <img src="food5.jpg" alt="">
+    </div>
+<script>
+
+    function q(){
+        if(document.getElementById("secret").style.display=='none')
+        document.getElementById("secret").style.display='block'
+        else
+        document.getElementById("secret").style.display='none'
+    }
+
+    function q1(){
+        if(document.getElementById("secret").style.visibility=='hidden')
+        document.getElementById("secret").style.visibility='visible'
+        else
+        document.getElementById("secret").style.visibility='hidden'
+    }
+</script>
+
+</body>
+
+</html>
