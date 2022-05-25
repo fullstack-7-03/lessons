@@ -35,15 +35,18 @@
     <div id="mytext"></div>
     <div class="hidden">
         <p class="my" onclick='window.alert("ברוכים הבאים ל-JS")'>פתח חלונית אזהרה</p>
-        <p class="my" onclick='console.log("ברוכים הבאים ל-CONSOLE")'>פתח console כדי לראות טקסט</p>
+        <p class="my" onclick='changekishur()'>שינוי קישור</p>
         <p class="my"
             onclick='document.getElementById("mytext").innerHTML="JavaScript is Here!"; document.getElementById("mytext").className="cool"'>
             ברוכים הבאים ל-JS</p>
         <p class="my" id="my" onclick="open_text()">פתח קוד הסודי</p>
-        <p class="my" id="my" onclick="colorbg()">שנה צבע רקע</p>
+        <p class="my" id="my" ondblclick="colorbg()">שנה צבע רקע</p>
     </div>
     <p id="secret" class="my red secret">Secret code is: 1234</p>
     <br>
+    <input type="text" id="almog" onkeydown="document.getElementById('almog').style.backgroundColor='pink'" autofocus>
+    <br><br>
+    <a id="kishur" href="http://www.google.com">GOOGLE</a>
     <div class="gallery">
         <img src="food1.jpg" alt="">
         <img src="food2.jpg" alt="">
