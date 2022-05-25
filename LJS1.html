@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style13.css">
+    <script src="myjs.js"></script>
+    <title>שיעור 13</title>
+</head>
+
+<body style="background-color: plum;">
+    <!--onload="alert('JS')" -->
+    <div class="nav">
+        מיני אתר שלי
+        <a href="#"><img src="css.png" alt=""></a>
+    </div>
+    <br>
+    <div class="container">
+        <div class="dropdown">
+            <li class="dropbtn">דף בית</li>
+            <div class="dropdown-content">
+                <ul>
+                    <li>דף בית 1</li>
+                    <li>דף בית 2</li>
+                    <li>דף בית 3</li>
+                </ul>
+            </div>
+        </div>
+        <li>אודותינו</li>
+        <li>צור קשר</li>
+        <li>מחירון</li>
+    </div>
+    <div id="mytext"></div>
+    <div class="hidden">
+        <p class="my" onclick='window.alert("ברוכים הבאים ל-JS")'>פתח חלונית אזהרה</p>
+        <p class="my" onclick='console.log("ברוכים הבאים ל-CONSOLE")'>פתח console כדי לראות טקסט</p>
+        <p class="my"
+            onclick='document.getElementById("mytext").innerHTML="JavaScript is Here!"; document.getElementById("mytext").className="cool"'>
+            ברוכים הבאים ל-JS</p>
+        <p class="my" id="my" onclick="open_text()">פתח קוד הסודי</p>
+        <p class="my" id="my" onclick="colorbg()">שנה צבע רקע</p>
+    </div>
+    <p id="secret" class="my red secret">Secret code is: 1234</p>
+    <br>
+    <div class="gallery">
+        <img src="food1.jpg" alt="">
+        <img src="food2.jpg" alt="">
+        <img src="food3.jpg" alt="">
+        <img src="food4.jpg" alt="">
+        <img src="food5.jpg" alt="">
+    </div>
+</body>
+
+</html>
