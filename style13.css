@@ -12,12 +12,13 @@ body {
     background-color: plum;
 }
 
-.my {
+div.hidden>p {
     text-align: center;
     margin: 10px auto;
     background-color: beige;
     color: darkblue;
     padding: 20px;
+    border: red 1px solid;
 }
 
 .hidden {
@@ -109,15 +110,15 @@ div.container {
 div.gallery {
     display: flex;
     gap: 5px;
-    align-items: stretch;
+    /* align-items: stretch; */
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 div.gallery>img {
-    max-width: 300px;
+    max-width: 260px;
     height: auto;
 }
 

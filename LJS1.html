@@ -34,14 +34,13 @@
     </div>
     <div id="mytext"></div>
     <div class="hidden">
-        <p class="my" onclick='window.alert("ברוכים הבאים ל-JS")'>פתח חלונית אזהרה</p>
-        <p class="my" onclick='changekishur()'>שינוי קישור</p>
-        <p class="my"
-            onclick='document.getElementById("mytext").innerHTML="JavaScript is Here!"; document.getElementById("mytext").className="cool"'>
+        <p onclick='window.alert("ברוכים הבאים ל-JS")'>פתח חלונית אזהרה</p>
+        <p onclick='changekishur()'>שינוי קישור</p>
+        <p onclick='document.getElementById("mytext").innerHTML="JavaScript is Here!"; document.getElementById("mytext").className="cool"'>
             ברוכים הבאים ל-JS</p>
-        <p class="my" id="my" onclick="open_text()">פתח קוד הסודי</p>
-        <p class="my" id="my" ondblclick="colorbg()">שנה צבע רקע</p>
-    </div>
+        <p id="my" onclick="open_text()">פתח קוד הסודי</p>
+        <p id="my" ondblclick="colorbg()">שנה צבע רקע</p>
+    </div>   
     <p id="secret" class="my red secret">Secret code is: 1234</p>
     <br>
     <input type="text" id="almog" onkeydown="document.getElementById('almog').style.backgroundColor='pink'" autofocus>

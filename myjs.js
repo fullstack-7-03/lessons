@@ -17,6 +17,12 @@ function colorbg() {
 }
 
 function changekishur() {
-    document.getElementById("kishur").href = "http://www.ynet.co.il";
-    document.getElementById("kishur").innerText = "YNET"
+    if (document.getElementById("kishur").innerText == 'YNET') {
+        document.getElementById("kishur").href = "http://www.google.com"
+        document.getElementById("kishur").innerText = "GOOGLE"
+    }
+    else {
+        document.getElementById("kishur").href = "http://www.ynet.co.il"
+        document.getElementById("kishur").innerText = "YNET"
+    }
 }
